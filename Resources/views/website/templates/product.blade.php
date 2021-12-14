@@ -28,8 +28,8 @@
 
     <div class="add-comment">
         <form wire:submit.prevent="addComment" method="post" class="c-form">
-            <textarea wire:model.defer='content' rows="4" placeholder="write comment"></textarea>
-            <button class="main-btn" type="submit">Add Comment</button>
+            <textarea wire:model.defer='content' rows="4" placeholder="اكتب تعليقاً..."></textarea>
+            <button class="main-btn" type="submit">تعليق</button>
         </form>
     </div>
     @include('components.loading')
