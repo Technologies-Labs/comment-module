@@ -25,13 +25,15 @@
         @endforeach
 
     </ul>
-
+    @auth
     <div class="add-comment">
         <form wire:submit.prevent="addComment" method="post" class="c-form">
             <textarea wire:model.defer='content' rows="4" placeholder="write comment"></textarea>
             <button class="main-btn" type="submit">Add Comment</button>
         </form>
     </div>
+    @endauth
+
     @include('components.loading')
 </div>
 

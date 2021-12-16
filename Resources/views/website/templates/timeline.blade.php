@@ -1,8 +1,11 @@
 <div class="new-comment" style="display: none;" wire:ignore.self>
+    @auth
     <form wire:submit.prevent="addComment">
         <input wire:model.defer='content' type="text" required placeholder="write comment">
         <button type="submit"><i class="icofont-paper-plane"></i></button>
     </form>
+    @endauth
+
     <div class="comments-area">
         <ul>
             @foreach ($comments as $comment)
