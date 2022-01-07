@@ -1,7 +1,7 @@
 <div class="new-comment" style="display: none;" wire:ignore.self>
     @auth
     <form wire:submit.prevent="addComment">
-        <input wire:model.defer='content' type="text" required placeholder="write comment">
+        <input wire:model.defer='content' type="text" required placeholder="اكتب تعليقاً">
         <button type="submit"><i class="icofont-paper-plane"></i></button>
     </form>
     @endauth
