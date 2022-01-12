@@ -1,5 +1,5 @@
 <div class="comment-area product mt-5">
-    <h4 class="comment-title">Feedback</h4>
+    <h4 class="comment-title">التعليقات</h4>
 
     <ul class="comments">
         @foreach ($comments as $comment)
@@ -28,8 +28,8 @@
     @auth
     <div class="add-comment">
         <form wire:submit.prevent="addComment" method="post" class="c-form">
-            <textarea wire:model.defer='content' rows="4" placeholder="write comment"></textarea>
-            <button class="main-btn" type="submit">Add Comment</button>
+            <textarea wire:model.defer='content' rows="4" placeholder="اكتب تعليقاً"></textarea>
+            <button class="main-btn" type="submit">إضافة تعليق</button>
         </form>
     </div>
     @endauth
